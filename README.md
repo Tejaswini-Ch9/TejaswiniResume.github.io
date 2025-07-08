@@ -21,8 +21,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle, rgba(0, 128, 255, 0.1) 10%, transparent 11%),
-                  radial-gradient(circle, rgba(0, 255, 128, 0.1) 10%, transparent 11%);
+      background: radial-gradient(circle, rgba(0, 128, 255, 0.05) 10%, transparent 11%),
+                  radial-gradient(circle, rgba(0, 255, 128, 0.05) 10%, transparent 11%);
       background-size: 80px 80px;
       animation: moveBg 60s linear infinite;
       z-index: -1;
@@ -31,106 +31,134 @@
       from { background-position: 0 0, 0 0; }
       to { background-position: 1000px 1000px, -1000px -1000px; }
     }
-    .slide {
-      height: 100vh;
-      padding: 4rem 2rem;
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #005c99;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #007acc;
+    }
+    header {
       text-align: center;
-      opacity: 0;
-      transform: translateY(40px);
-      animation: slideIn 1s forwards;
+      padding: 4rem 1rem 2rem;
     }
-    .slide:nth-child(even) {
-      background-color: #ffffffcc;
-    }
-    h1 {
+    header h1 {
+      font-family: 'Fira Code', monospace;
       font-size: 2.5rem;
       color: #005c99;
-      font-family: 'Fira Code', monospace;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #007acc;
       margin-bottom: 1rem;
     }
-    p, li {
-      font-size: 1rem;
-      max-width: 800px;
-      line-height: 1.6;
-      margin-bottom: 0.5rem;
+    .contact p {
+      margin: 0.3rem 0;
+    }
+    section {
+      margin: 3rem auto;
+      max-width: 900px;
+      padding: 1rem;
+    }
+    section h2 {
+      font-size: 1.75rem;
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
     ul {
-      text-align: left;
-      max-width: 800px;
+      padding-left: 1.2rem;
     }
     li {
-      margin-left: 1.5rem;
+      margin: 0.5rem 0;
+      line-height: 1.6;
     }
-    @keyframes slideIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
-  <div class="slide">
-    <h1>SAI SURYA TEJASWINI CHANDRAVAMSAM</h1>
-    <p>📍 300 Cyberonics Blvd, Houston, Texas-77058</p>
-    <p>📞 +1-281-898-2977</p>
-    <p>📧 tejaswinichandravamsam@gmail.com</p>
-  </div>
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+  </nav>
 
-  <div class="slide">
+  <header>
+    <h1>SAI SURYA TEJASWINI CHANDRAVAMSAM</h1>
+    <div class="contact">
+      <p>📍 300 Cyberonics Blvd, Houston, Texas-77058</p>
+      <p>📞 +1-281-898-2977</p>
+      <p>📧 tejaswinichandravamsam@gmail.com</p>
+    </div>
+  </header>
+
+  <section id="summary">
     <h2>Professional Summary</h2>
     <p>Application Analyst and Software Engineer with 4+ years of experience in application support, production troubleshooting, and system optimization. Skilled in Java, SQL, and API integrations with proven ability to maintain enterprise applications and collaborate with cross-functional teams. Experienced in SDLC, agile methodologies, and supporting mission-critical systems for global clients.</p>
-  </div>
+  </section>
 
-  <div class="slide">
-    <h2>Work Experience – Freelance Software Engineer (Jan 2023 - Present)</h2>
+  <section id="experience">
+    <h2>Freelance Software Engineer – ProdigitalWorx PVT Limited (Jan 2023 - Present)</h2>
     <ul>
-      <li>Continued collaboration with ProdigitalWorx supporting TMNA systems.</li>
-      <li>Performed system testing, performance tuning, and incremental deployments.</li>
-      <li>Resolved API issues and documented changes for auditing and compliance.</li>
+      <li>Engaged in freelance software development and continuous improvement for TMNA systems.</li>
+      <li>Collaborated with internal teams to maintain business continuity during post-deployment phases.</li>
+      <li>Implemented software development best practices across development, staging, and production environments.</li>
+      <li>Provided on-demand debugging support for real-time production issues and resolved bottlenecks in code performance.</li>
+      <li>Enhanced existing modules and executed incremental feature deployments using Agile processes.</li>
+      <li>Managed cloud storage through AWS S3 and monitored usage for performance tuning.</li>
+      <li>Maintained up-to-date documentation for compliance and change tracking.</li>
+      <li>Delivered training sessions to new team members regarding system processes and support workflows.</li>
     </ul>
-  </div>
 
-  <div class="slide">
-    <h2>Work Experience – ProdigitalWorx PVT Limited (Nov 2020 - Dec 2022)</h2>
+    <h2>Project Support Analyst – ProdigitalWorx PVT Limited (Nov 2020 - Dec 2022)</h2>
     <ul>
-      <li>Provided production support for Toyota Motors North America (TMNA), ensuring system stability and adherence to SDLC.</li>
-      <li>Resolved incidents, managed API integrations, and documented activities for audits.</li>
-      <li>Performed root cause analysis, debugging, and implemented enhancements.</li>
-      <li>Supported enterprise applications from design to deployment.</li>
-      <li>Collaborated with stakeholders to troubleshoot and optimize workflows.</li>
-      <li>Led workflow improvements that reduced issue resolution time by 15%.</li>
-      <li>Managed cloud storage using AWS S3 and Glacier.</li>
-      <li>Contributed to documentation for compliance and improved service delivery.</li>
+      <li>Acted as the primary support analyst for Toyota Motors North America application systems.</li>
+      <li>Managed daily incident triaging and prioritized issue resolution to maintain 99.9% system uptime.</li>
+      <li>Implemented preventive maintenance strategies and automated alerts using DataDog and Kibana.</li>
+      <li>Supported REST API integration workflows between microservices and enterprise systems.</li>
+      <li>Contributed to SDLC phases, including code design, functional testing, and deployment validations.</li>
+      <li>Identified process inefficiencies and recommended enhancements that improved issue resolution time by 15%.</li>
+      <li>Worked closely with QA teams and developers to trace defects and implement quick patches.</li>
+      <li>Managed ticket lifecycle through ServiceNow, ensuring SLA compliance and user satisfaction.</li>
+      <li>Led knowledge transfer sessions and contributed to centralized support playbooks.</li>
+      <li>Documented all production support activities for audit and compliance reporting.</li>
     </ul>
-  </div>
 
-  <div class="slide">
     <h2>University Roles – University of Houston-Clear Lake</h2>
     <ul>
-      <li>Graduate Assistant (Sep 2023 - Aug 2024): Supported data collection and analysis for analytical projects.</li>
-      <li>Orientation Leader (Apr 2023 - Aug 2023): Guided new students and organized orientation sessions.</li>
-      <li>AI Summer Camp Instructor (June 2023): Taught AI/ML concepts to high school students under Dr. Soma Datta.</li>
+      <li>Graduate Assistant: Assisted professors in research projects by performing data cleaning and visualization.</li>
+      <li>Generated reports and summarized findings that contributed to academic presentations.</li>
+      <li>Orientation Leader: Facilitated student onboarding by organizing tours and Q&A panels.</li>
+      <li>Delivered presentations on university life and student services to improve first-year engagement.</li>
+      <li>AI Camp Instructor: Taught core concepts of Machine Learning using Python and simple datasets.</li>
+      <li>Created engaging examples such as image classification and sentiment analysis for high school students.</li>
     </ul>
-  </div>
 
-  <div class="slide">
-    <h2>Internship – Ridhan Technologies (May 2019 - Jul 2019)</h2>
+    <h2>Intern – Ridhan Technologies (May 2019 - Jul 2019)</h2>
     <ul>
-      <li>Developed and implemented web apps using HTML, CSS, and JavaScript.</li>
-      <li>Enhanced UX by optimizing UI components and debugging frontend issues.</li>
+      <li>Designed frontend components for dynamic webpages using HTML, CSS, and JavaScript.</li>
+      <li>Optimized web performance and reduced page load times by refining CSS and JS calls.</li>
+      <li>Participated in daily scrums and contributed UI improvements based on client feedback.</li>
+      <li>Assisted senior developers in deploying modules using version control tools like Git.</li>
+      <li>Collaborated with backend developers to test REST API integrations and display responses dynamically.</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="slide">
+  <section id="skills">
     <h2>Technical Skills</h2>
     <ul>
       <li>Programming Languages: C, C++, Java, Python, R, SQL, JavaScript, MATLAB</li>
@@ -143,27 +171,42 @@
       <li>Scripting & System: Linux Shell Scripting, Windows OS, SDLC, System Troubleshooting</li>
       <li>Platforms: IBM WebSphere (familiarity), Open Source tools, Cloud-based application deployment</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="slide">
+  <section id="education">
     <h2>Education</h2>
     <ul>
       <li>Master of Science, Software Engineering – University of Houston-Clear Lake (2023 - 2024), GPA: 3.15/4.0</li>
       <li>Bachelor of Technology, Computer Science & Engineering – Avanthi Institute of Engineering and Technology, GPA: 7.49/10</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="slide">
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><strong>DSP and CPU Interface (Command-Based)</strong>: Real-time signal processing between TMS320C6000 DSP and CPU.</li>
-      <li><strong>Agile SCRUM Website</strong>: Interactive site detailing Agile practices and iterative testing improvements.</li>
-      <li><strong>Correlation of Diseases</strong>: ML-based predictive model for heart disease and cancer using health data.</li>
-      <li><strong>Himalaya Life Line Web Page</strong>: Secure Angular + REST app for customer data management.</li>
-    </ul>
-  </div>
+      <li><strong>DSP and CPU Interface</strong>: Built a real-time command-based system between TMS320C6000 DSP and CPU for audio processing.</li>
+      <li>Implemented command flags and interrupt routines for synchronous communication.</li>
+      <li>Utilized C and Assembly to build interrupt-driven logic for real-time processing.</li>
+      <li>Designed hardware schematics to connect the CPU and DSP system using TMS320C6000.</li>
 
-  <div class="slide">
+      <li><strong>Agile SCRUM Website</strong>: Developed an educational website to explain Agile & Scrum principles.</li>
+      <li>Created interactive UI components to present lifecycle diagrams and backlog workflows.</li>
+      <li>Performed QA testing using browser automation tools to ensure cross-browser compatibility.</li>
+      <li>Conducted usability tests with classmates and refined layout based on feedback.</li>
+
+      <li><strong>Correlation of Diseases (ML)</strong>: Built ML models to predict risk of heart disease and cancer.</li>
+      <li>Cleaned and processed patient datasets for classification using Scikit-learn models.</li>
+      <li>Visualized correlations between biomarkers and diseases using seaborn/matplotlib.</li>
+      <li>Improved prediction accuracy using hyperparameter tuning and model stacking.</li>
+
+      <li><strong>Himalaya Life Line Web Page</strong>: Developed Angular-based frontend and REST backend.</li>
+      <li>Integrated secure customer login, appointment booking, and feedback module.</li>
+      <li>Used Angular Material to design responsive UI compatible with mobile devices.</li>
+      <li>Connected frontend to MongoDB-backed APIs for real-time data syncing.</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
     <h2>Certifications</h2>
     <ul>
       <li>MATLAB Onramp: MathWorks (2023)</li>
@@ -178,6 +221,6 @@
       <li>Android Workshop: Subrains Technology (2018)</li>
       <li>Cyber Security Essentials: Cisco Networking Academy (2018)</li>
     </ul>
-  </div>
+  </section>
 </body>
 </html>
