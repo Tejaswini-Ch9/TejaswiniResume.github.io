@@ -100,8 +100,7 @@
   <header>
     <h1>SAI SURYA TEJASWINI CHANDRAVAMSAM</h1>
     <div class="contact">
-      <p>📍 300 Cyberonics Blvd, Houston, Texas-77058</p>
-      <p>📞 +1-281-898-2977</p>
+      <p>📍 Houston, Texas</p>
       <p>📧 tejaswinichandravamsam@gmail.com</p>
     </div>
   </header>
