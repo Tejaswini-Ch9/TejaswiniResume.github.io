@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -68,16 +68,31 @@
     }
     header {
       text-align: center;
-      padding: 4rem 1rem 2rem;
+      padding: 4rem 1rem 1rem;
     }
     header h1 {
       font-family: "Fira Code", monospace;
       font-size: 2.5rem;
       color: #005c99;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
-    .contact p {
-      margin: 0.3rem 0;
+    .contact-info {
+      margin-bottom: 3rem;
+      font-size: 1rem;
+      color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .contact-info a {
+      color: #005c99;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-info a:hover {
+      color: #007acc;
+      text-decoration: underline;
     }
     section {
       margin: 3rem auto;
@@ -121,9 +136,10 @@
 
   <header>
     <h1>SAI SURYA TEJASWINI CHANDRAVAMSAM</h1>
-    <div class="contact">
-      <p>📍 Houston, Texas</p>
-      <p>📧 tejaswinichandravamsam@gmail.com</p>
+    <div class="contact-info">
+      <span>📍 Houston, Texas</span>
+      <span>📧 <a href="mailto:tejaswinichandravamsam@gmail.com" target="_blank" rel="noopener noreferrer">tejaswinichandravamsam@gmail.com</a></span>
+      <span>🔗 <a href="https://www.linkedin.com/in/tejaswini-ch-348814177/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></span>
     </div>
   </header>
 
