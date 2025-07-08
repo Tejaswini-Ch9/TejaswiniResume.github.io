@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SAI SURYA TEJASWINI CHANDRAVAMSAM | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: "Inter", sans-serif;
       background: #fdfbfb;
       color: #222;
       padding: 0;
@@ -21,15 +29,23 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle, rgba(0, 128, 255, 0.05) 10%, transparent 11%),
-                  radial-gradient(circle, rgba(0, 255, 128, 0.05) 10%, transparent 11%);
+      background: radial-gradient(
+          circle,
+          rgba(0, 128, 255, 0.05) 10%,
+          transparent 11%
+        ),
+        radial-gradient(circle, rgba(0, 255, 128, 0.05) 10%, transparent 11%);
       background-size: 80px 80px;
       animation: moveBg 60s linear infinite;
       z-index: -1;
     }
     @keyframes moveBg {
-      from { background-position: 0 0, 0 0; }
-      to { background-position: 1000px 1000px, -1000px -1000px; }
+      from {
+        background-position: 0 0, 0 0;
+      }
+      to {
+        background-position: 1000px 1000px, -1000px -1000px;
+      }
     }
     nav {
       position: sticky;
@@ -38,7 +54,7 @@
       display: flex;
       justify-content: center;
       padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       z-index: 1000;
     }
     nav a {
@@ -55,7 +71,7 @@
       padding: 4rem 1rem 2rem;
     }
     header h1 {
-      font-family: 'Fira Code', monospace;
+      font-family: "Fira Code", monospace;
       font-size: 2.5rem;
       color: #005c99;
       margin-bottom: 1rem;
@@ -75,8 +91,14 @@
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
     }
+    section h3 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #004f7c;
+    }
     ul {
       padding-left: 1.2rem;
+      margin-bottom: 1rem;
     }
     li {
       margin: 0.5rem 0;
@@ -107,7 +129,14 @@
 
   <section id="summary">
     <h2>Professional Summary</h2>
-    <p>Application Analyst and Software Engineer with 4+ years of experience in application support, production troubleshooting, and system optimization. Skilled in Java, SQL, and API integrations with proven ability to maintain enterprise applications and collaborate with cross-functional teams. Experienced in SDLC, agile methodologies, and supporting mission-critical systems for global clients.</p>
+    <p>
+      Application Analyst and Software Engineer with 4+ years of experience in
+      application support, production troubleshooting, and system
+      optimization. Skilled in Java, SQL, and API integrations with proven
+      ability to maintain enterprise applications and collaborate with
+      cross-functional teams. Experienced in SDLC, agile methodologies, and
+      supporting mission-critical systems for global clients.
+    </p>
   </section>
 
   <section id="experience">
@@ -141,7 +170,7 @@
     <ul>
       <li>Graduate Assistant: Assisted professors in research projects by performing data cleaning and visualization.</li>
       <li>Generated reports and summarized findings that contributed to academic presentations.</li>
-      <li>Orientation Leader: Facilitated student onboarding by organizing tours and Q&A panels.</li>
+      <li>Orientation Leader: Facilitated student onboarding by organizing tours and Q&amp;A panels.</li>
       <li>Delivered presentations on university life and student services to improve first-year engagement.</li>
       <li>AI Camp Instructor: Taught core concepts of Machine Learning using Python and simple datasets.</li>
       <li>Created engaging examples such as image classification and sentiment analysis for high school students.</li>
@@ -162,12 +191,12 @@
     <ul>
       <li>Programming Languages: C, C++, Java, Python, R, SQL, JavaScript, MATLAB</li>
       <li>Web Development: Angular, HTML, CSS, Bootstrap</li>
-      <li>Tools & Technologies: AWS, Git, JIRA, MongoDB, DataDog, Kibana, ServiceNow, REST APIs, Microservices</li>
-      <li>Machine Learning & Data Science: Deep Learning, AI, Data Analysis, Cybersecurity</li>
-      <li>Software Development & Testing: Agile, Software Architecture, Production Support</li>
+      <li>Tools &amp; Technologies: AWS, Git, JIRA, MongoDB, DataDog, Kibana, ServiceNow, REST APIs, Microservices</li>
+      <li>Machine Learning &amp; Data Science: Deep Learning, AI, Data Analysis, Cybersecurity</li>
+      <li>Software Development &amp; Testing: Agile, Software Architecture, Production Support</li>
       <li>Soft Skills: Leadership, Problem Solving, Communication, Teamwork, Presentation Skills</li>
       <li>Productivity Tools: MS Office Suite</li>
-      <li>Scripting & System: Linux Shell Scripting, Windows OS, SDLC, System Troubleshooting</li>
+      <li>Scripting &amp; System: Linux Shell Scripting, Windows OS, SDLC, System Troubleshooting</li>
       <li>Platforms: IBM WebSphere (familiarity), Open Source tools, Cloud-based application deployment</li>
     </ul>
   </section>
@@ -176,40 +205,59 @@
     <h2>Education</h2>
     <ul>
       <li>Master of Science, Software Engineering – University of Houston-Clear Lake (2023 - 2024), GPA: 3.15/4.0</li>
-      <li>Bachelor of Technology, Computer Science & Engineering – Avanthi Institute of Engineering and Technology, GPA: 7.49/10</li>
+      <li>Bachelor of Technology, Computer Science &amp; Engineering – Avanthi Institute of Engineering and Technology, GPA: 7.49/10</li>
     </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>DSP and CPU Interface</strong>: Built a real-time command-based system between TMS320C6000 DSP and CPU for audio processing.</li>
-      <li>Implemented command flags and interrupt routines for synchronous communication.</li>
-      <li>Utilized C and Assembly to build interrupt-driven logic for real-time processing.</li>
-      <li>Designed hardware schematics to connect the CPU and DSP system using TMS320C6000.</li>
 
-      <li><strong>Agile SCRUM Website</strong>: Developed an educational website to explain Agile & Scrum principles.</li>
-      <li>Created interactive UI components to present lifecycle diagrams and backlog workflows.</li>
-      <li>Performed QA testing using browser automation tools to ensure cross-browser compatibility.</li>
-      <li>Conducted usability tests with classmates and refined layout based on feedback.</li>
+    <div class="project">
+      <h3><strong>DSP and CPU Interface</strong></h3>
+      <ul>
+        <li>Built a real-time command-based system between TMS320C6000 DSP and CPU for audio processing.</li>
+        <li>Implemented command flags and interrupt routines for synchronous communication.</li>
+        <li>Utilized C and Assembly to build interrupt-driven logic for real-time processing.</li>
+        <li>Designed hardware schematics to connect the CPU and DSP system using TMS320C6000.</li>
+      </ul>
+    </div>
 
-      <li><strong>Correlation of Diseases (ML)</strong>: Built ML models to predict risk of heart disease and cancer.</li>
-      <li>Cleaned and processed patient datasets for classification using Scikit-learn models.</li>
-      <li>Visualized correlations between biomarkers and diseases using seaborn/matplotlib.</li>
-      <li>Improved prediction accuracy using hyperparameter tuning and model stacking.</li>
+    <div class="project">
+      <h3><strong>Agile SCRUM Website</strong></h3>
+      <ul>
+        <li>Developed an educational website to explain Agile &amp; Scrum principles.</li>
+        <li>Created interactive UI components to present lifecycle diagrams and backlog workflows.</li>
+        <li>Performed QA testing using browser automation tools to ensure cross-browser compatibility.</li>
+        <li>Conducted usability tests with classmates and refined layout based on feedback.</li>
+      </ul>
+    </div>
 
-      <li><strong>Himalaya Life Line Web Page</strong>: Developed Angular-based frontend and REST backend.</li>
-      <li>Integrated secure customer login, appointment booking, and feedback module.</li>
-      <li>Used Angular Material to design responsive UI compatible with mobile devices.</li>
-      <li>Connected frontend to MongoDB-backed APIs for real-time data syncing.</li>
-    </ul>
+    <div class="project">
+      <h3><strong>Correlation of Diseases (ML)</strong></h3>
+      <ul>
+        <li>Built ML models to predict risk of heart disease and cancer.</li>
+        <li>Cleaned and processed patient datasets for classification using Scikit-learn models.</li>
+        <li>Visualized correlations between biomarkers and diseases using seaborn/matplotlib.</li>
+        <li>Improved prediction accuracy using hyperparameter tuning and model stacking.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3><strong>Himalaya Life Line Web Page</strong></h3>
+      <ul>
+        <li>Developed Angular-based frontend and REST backend.</li>
+        <li>Integrated secure customer login, appointment booking, and feedback module.</li>
+        <li>Used Angular Material to design responsive UI compatible with mobile devices.</li>
+        <li>Connected frontend to MongoDB-backed APIs for real-time data syncing.</li>
+      </ul>
+    </div>
   </section>
 
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
       <li>MATLAB Onramp: MathWorks (2023)</li>
-      <li>Python & Deep Learning Essential Bootcamp: LetsUpgrade (2022)</li>
+      <li>Python &amp; Deep Learning Essential Bootcamp: LetsUpgrade (2022)</li>
       <li>Machine Learning Bootcamp for Beginners: Learn Mall (2021)</li>
       <li>Python for Data Engineers: AntWalk (2021)</li>
       <li>Python with ML Fundamentals: Perfect eLearning (2021)</li>
